@@ -1,7 +1,7 @@
 steps:
   - name: "gcr.io/cloud-builders/go"
-    args: ["install", "github.com/{kakarot1994}/gcp-cd-codelab"]
-    env: ["PROJECT_ROOT=github.com/{kakarot1994}/gcp-cd-codelab"]
+    args: ["install", "github.com/{kakarot1994}/istio-test"]
+    env: ["PROJECT_ROOT=github.com/{kakarot1994}/istio-test"]
   - name: "gcr.io/cloud-builders/docker"
     args: ["build", "-t", "gcr.io/{sodium-apex-229314}/gcp-cd-codelab:$REVISION_ID", "-f", "Dockerfile", "."]
 images:
